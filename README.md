@@ -1,3 +1,16 @@
+## Background Info
+What is Seacows?
+SeaCows is a decentralized NFT AMM powered by AI-driven price oracles to enable instant NFT trading. Website:https://seacows.io/
+
+## What is NFT AMM？
+An NFT AMM is a decentralized alternative to centralized marketplaces such as Opensea or Magic Eden. Unlike a bid-and-buy model, it utilizes liquidity pools to allow for frictionless, low-cost trading.
+Documentation: https://docs.seacows.io/nft-amm-deep-dives/user-guide
+
+## What to do?
+There are a few fundamental functions of Seacows, including swapping (buy and sell in a centralized marketplace), creating the pool, and withdrawing liquidity. What needed to do in this test is swapping.
+
+
+
 ## Resources need to implement the test
 ```
 pool address: 0x1c9f47f8c42c3a8be36dcbe3d49e365b8099c7df
