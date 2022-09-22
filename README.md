@@ -13,10 +13,12 @@ There are a few fundamental functions of Seacows, including swapping (buy and se
 
 ## Resources need to implement the test
 ```
-pool address: 0x1c9f47f8c42c3a8be36dcbe3d49e365b8099c7df [Still in active developement, might change later, but good to take a look at code first]
-mint test nft address: 0x720a1f7ae2c4f9b876852bf14089696c3ee57b1d  [Still in active developement, might change later, but good to take a look at code first]
-swap contract address: 0xf2B19657A9930740b97D03AC40Ed5Ce2f2678475（abi in lib/abi/SeacowsRouter/*.json）
- [Still in active developement, might change later, but good to take a look at code first]
+pool address: 0x1c9f47f8c42c3a8be36dcbe3d49e365b8099c7df
+mint test nft address: 0x720a1f7ae2c4f9b876852bf14089696c3ee57b1d
+swap contract address: 0x927967C413c385c097259dc7a51203a027750d9d（abi in lib/abi/SeacowsRouter/*.json）
+Swap used outputAmount by lib/abi/SeacowsPair/*.json to pool address got { ..., newSpotPrice }
+use lib/merkle-tree/*.json got details
+swap func: swapNFTsForToken
 ```
 
 ## chain for testnet implementation
