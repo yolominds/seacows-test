@@ -1,33 +1,25 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import { Button, notification } from 'antd';
-import styles from '../styles/Home.module.scss'
+import type { NextPage } from 'next';
+import { Layout } from 'antd';
+import styles from '../styles/Home.module.scss';
+
+import ClientWrap from '../src/components/ClientWrap';
+import Header from '../src/components/Header';
+
+const { Footer, Sider, Content } = Layout;
 
 const Home: NextPage = () => {
+	return (
+		<ClientWrap>
+			<Layout className={styles.layout}>
+				<Header />
+				<Layout>
+					<Sider>Sider</Sider>
+					<Content>Content</Content>
+				</Layout>
+				<Footer>Footer</Footer>
+			</Layout>
+		</ClientWrap>
+	);
+};
 
-  const showNot = () => {
-    notification.open({
-      message: '',
-      className: `${ styles.mynot }`,
-      duration: null,
-      description:
-        <div className={ styles.description }>
-          <i></i>
-          <div>
-            <p>ddddd</p>
-          </div>
-        </div>,
-      onClick: () => {
-        console.log('Notification Clicked!');
-      },
-    });
-  }
-  return (
-    <div className={styles.container}>
-      <button onClick={showNot}>dialog</button>
-    </div>
-  )
-}
-
-export default Home
+export default Home;
